@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing Website Detection</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            text-align: center;
+            padding-top: 80px;
+        }
+
+        .container {
+            width: 500px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        input {
+            width: 90%;
+            padding: 12px;
+            margin: 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 15px;
+        }
+
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            background: #222;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #444;
+        }
+
+        h2 {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Phishing Website Detection System</h1>
+
+<p>
+    A Machine Learning based system that analyzes website URLs
+    and predicts whether a website is phishing or legitimate.
+</p>
+        <form method="POST">
+
+            <input
+                type="text"
+                name="url"
+                placeholder="Enter website URL"
+                required
+            >
+
+            <br>
+
+            <button type="submit">Check URL</button>
+
+        </form>
+
+        {% if result %}
+            <h2>{{ result }}</h2>
+        {% endif %}
+        <hr>
+
+<h3>How It Works</h3>
+<hr>
+
+<h3>Project Features</h3>
+<hr>
+
+<h3>Technologies Used</h3>
+<hr>
+
+<h3>Model Performance</h3>
+
+<p>
+    Test Dataset Accuracy: <strong>95.84%</strong>
+</p>
+
+<p>
+    The accuracy represents the performance of the Random Forest
+    model on the held-out test data.
+</p>
+
+<p>Python</p>
+<p>Flask</p>
+<p>Machine Learning</p>
+<p>Scikit-learn</p>
+<p>HTML & CSS</p>
+<p>Pandas</p>
+
+<p>✔ URL-based phishing detection</p>
+<p>✔ Machine Learning classification</p>
+<p>✔ Fast prediction</p>
+<p>✔ Simple and user-friendly interface</p>
+<p>✔ Phishing and legitimate website classification</p>
+
+<p>1. Enter a website URL.</p>
+<p>2. The system extracts URL features.</p>
+<p>3. Machine Learning model analyzes the features.</p>
+<p>4. The website is classified as Phishing or Legitimate.</p>
+
+    </div>
+
+</body>
+</html>
